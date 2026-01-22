@@ -44,6 +44,7 @@ conda env create -f environment.yml
 conda activate cenn-tsf
 
 ## Basic Usage
+```bash
 from src.cenn_framework import CeNNEmulator
 # Initialize CeNN emulator
 emulator = CeNNEmulator(
@@ -65,6 +66,7 @@ predictions = emulator.forecast(
 )
 
 ## 📁 Repository Structure
+```bash
 quantum-inspired-tsf-framework/
 ├── src/                          # Main source code
 │   ├── cenn_framework/          # CeNN emulation framework
