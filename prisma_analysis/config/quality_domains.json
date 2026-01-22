@@ -1,0 +1,57 @@
+{
+  "domains": {
+    "D1_architecture_clarity": {
+      "description": "Clarity of QML architecture description",
+      "weight": 1.0,
+      "questions": [
+        {
+          "text": "Is the QML architecture clearly described?",
+          "type": "boolean",
+          "evidence_fields": ["methods.qml_architecture", "methods.circuit_design"],
+          "score_if_true": 1,
+          "max_score": 1
+        },
+        {
+          "text": "Are hyperparameters specified?",
+          "type": "boolean",
+          "evidence_fields": ["methods.hyperparameters", "supplementary.hyperparameters"],
+          "score_if_true": 1,
+          "max_score": 1
+        }
+      ],
+      "risk_thresholds": {
+        "low": 80,
+        "some_concerns": 50
+      }
+    },
+    "D2_baseline_rigor": {
+      "description": "Appropriateness of baseline comparisons",
+      "weight": 1.0,
+      "questions": [
+        {
+          "text": "Are appropriate classical baselines included?",
+          "type": "boolean",
+          "evidence_fields": ["methods.baselines", "results.comparison"],
+          "score_if_true": 1,
+          "max_score": 1
+        },
+        {
+          "text": "Is the comparison statistically rigorous?",
+          "type": "boolean",
+          "evidence_fields": ["results.statistical_tests", "results.p_values"],
+          "score_if_true": 1,
+          "max_score": 1
+        }
+      ],
+      "risk_thresholds": {
+        "low": 80,
+        "some_concerns": 50
+      }
+    }
+  },
+  "overall_risk_rules": {
+    "high": "Any domain at high risk",
+    "some_concerns": "Any domain at some concerns, none at high",
+    "low": "All domains at low risk"
+  }
+}
