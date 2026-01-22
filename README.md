@@ -43,7 +43,7 @@ cd Review
 conda env create -f environment.yml
 conda activate cenn-tsf
 
-Basic Usage
+## Basic Usage
 from src.cenn_framework import CeNNEmulator
 # Initialize CeNN emulator
 emulator = CeNNEmulator(
@@ -64,7 +64,7 @@ predictions = emulator.forecast(
     window_size=24
 )
 
-📁 Repository Structure
+## 📁 Repository Structure
 quantum-inspired-tsf-framework/
 ├── src/                          # Main source code
 │   ├── cenn_framework/          # CeNN emulation framework
@@ -80,7 +80,7 @@ quantum-inspired-tsf-framework/
 ├── configs/                     # Configuration files
 └── data/                        # Data processing scripts
 
-📊 Reproducing Paper Results
+## 📊 Reproducing Paper Results
 To reproduce all experiments from the paper:
 # Run main experiments
 python experiments/paper_figures/generate_all_figures.py
@@ -102,7 +102,7 @@ Figure 5: Sensitivity analysis (λ parameter)
 
 Table 6: Direct comparison with representative QML-TSF studies
 
-🔬 Scientific Methodology
+## 🔬 Scientific Methodology
 Our framework implements:
 
 1. CeNN State Dynamics
@@ -121,7 +121,7 @@ Kernel fusion for reduced VRAM bandwidth
 Multi-GPU scaling via NCCL (>92% efficiency)
 
 CUDA-accelerated CeNN cell updates
-📝 Citation
+## 📝 Citation
 If you use this code in your research, please cite our paper:
 @article{nkishidjenga2025systematic,
   title={Systematic Review of Quantum Machine Learning Techniques for Time Series Forecasting and a Neuro-Symbolic CeNN Emulation Framework},
@@ -130,13 +130,13 @@ If you use this code in your research, please cite our paper:
   year={2025},
   publisher={IEEE}
 }
-📄 License
+## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions are welcome! Please read our Contributing Guidelines for details.
 
-🙏 Acknowledgments
+## 🙏 Acknowledgments
 University of Kinshasa (UNIKIN) for research support
 
 Tshwane University of Technology (TUT) for computational resources
@@ -144,7 +144,7 @@ Tshwane University of Technology (TUT) for computational resources
 University of Klagenfurt for academic guidance
 
 All authors of the reviewed studies in our systematic review
-❓ FAQ
+## ❓ FAQ
 Q: Is this real quantum computing?
 A: No, this is classical emulation of quantum-inspired models. It runs entirely on classical hardware.
 
