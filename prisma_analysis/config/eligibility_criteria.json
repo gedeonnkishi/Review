@@ -1,0 +1,28 @@
+{
+  "review_title": "Systematic Review of Quantum Machine Learning for Time Series Forecasting",
+  "protocol_version": "2.0",
+  "inclusion_criteria": {
+    "population": ["Any time series dataset"],
+    "intervention": ["Quantum Machine Learning approaches", "Quantum-inspired methods"],
+    "comparator": ["Classical machine learning methods", "Statistical methods"],
+    "outcomes": ["Forecasting accuracy metrics", "Computational efficiency"],
+    "study_design": ["Empirical studies", "Experimental evaluations"],
+    "time_frame": ["2014-01-01 to 2025-12-31"],
+    "language": ["English"]
+  },
+  "exclusion_criteria": {
+    "study_type": ["Theoretical papers without experiments", "Review articles", "Editorials"],
+    "focus": ["Non-forecasting tasks", "Quantum computing without ML", "Classical ML without quantum aspects"],
+    "reporting": ["Insufficient methodological details", "No quantitative results"],
+    "access": ["Full text not available"]
+  },
+  "search_strategy": {
+    "databases": ["IEEE Xplore", "Scopus", "Web of Science", "arXiv", "ACM DL"],
+    "search_terms": {
+      "quantum": ["quantum", "qml", "quantum-inspired"],
+      "machine_learning": ["machine learning", "deep learning", "neural network"],
+      "forecasting": ["time series", "forecasting", "prediction", "temporal"]
+    },
+    "boolean_operators": "AND between groups, OR within groups"
+  }
+}
